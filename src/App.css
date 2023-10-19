@@ -1,3 +1,4 @@
+
 body{
   width: 100%;
   margin: 0 auto;
@@ -10,12 +11,12 @@ a{
   text-decoration: none;
 }
 
-/*NAVIGATION*/
 nav{
   z-index: 10001;
 }
 
-.navibar {
+
+.navbar {
   padding: 10px 13%;
   display: flex;
   justify-content: space-between;
@@ -41,7 +42,7 @@ nav ul li a:hover{
   cursor: pointer;
 }
 
-.burger {
+.bar {
   width: 25px;
   height: 3px;
   background-color: black;
@@ -66,7 +67,7 @@ nav ul li a:hover{
   align-items: center;
   transition: all 0.3s ease-in-out;
 }
-/*NAVIGATION*/
+
 
 /* header section */
 
@@ -271,7 +272,7 @@ footer ul li{
     color: #fff;
   }
 
-  .burger{
+  .bar{
     background: #333333;
   }
 
