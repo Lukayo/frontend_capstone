@@ -14,7 +14,7 @@ const handleOrder = (id) => {
         },
         buttonsStyling: false
       })
-      
+
       swalWithBootstrapButtons.fire({
         title: 'Do you want to confirm order?',
         text: "You won't be able to revert this!",
@@ -29,7 +29,7 @@ const handleOrder = (id) => {
             'Your order has been confirmed.',
             'success'
           )
-        } 
+        }
       })
 
 }
