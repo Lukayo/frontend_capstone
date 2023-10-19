@@ -10,17 +10,14 @@ import About from './components/About';
 function App() {
   return (
     <>
-      <body><header>
-            <Nav/></header>
-        <main>
-          <article><Hero/></article>
+          <Nav/>
+          <Hero/>
           <article><Highlights/></article>
           <article><Rating/></article>
           <article><About/></article>
-        </main>
         <footer>
           <Footer/>
-        </footer></body>
+        </footer>
     </>
   );
 }

@@ -1,11 +1,27 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import bannerImg from '../assets/restauranfood.jpg';
 
 const Hero = () => {
     return (
-        <>
-            <h>Little Lemon</h>
-            <h3>Chicago</h3>
-        </>
+        <header className="header">
+      <section>
+        <div className="banner">
+          <h2>Little Lemon</h2>
+          <h3>Chicago</h3>
+          <p>
+            We are a family owned Mediterraneran restaurant, focused on
+            traditional recipes servred with a modern twist.
+          </p>
+          <Link to="/booking">
+            <button aria-label="On Click">Reserve Table</button>
+          </Link>
+        </div>
+        <div className="banner-img">
+          <img src={bannerImg} alt="restaurantimage"/>
+        </div>
+      </section>
+    </header>
     );
 };
 

@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from '../assets/logo.svg'
 
 const Nav = () => {
-    return (
-        <nav>
-            <a href="/"> <img src={logo} alt='little lemon logo'/> </a>
+    const [menuOpen, setMenuOpen] = useState(false);
 
+    const toggleMenu = () =>{
+        setMenuOpen(!menuOpen);
+    }
+    return (
+        <nav className={`navibar ${menuOpen ? "open" : ""}`}>
+        <a href="/" className="logo">
+            <img src={logo} alt='logo'/>
+        </a>
+        {/*MOBILE NAVIGATION*/}
+        <div className="menu-icon" onClick={toggleMenu}>
+            <div className='burger'></div>
+            <div className='burger'></div>
+            <div className='burger'></div>
+        </div>
         {/*WEB NAVIGATION*/}
-        <ul>
+        <ul className={`nav-links ${menuOpen ? "visible" : ""}`}>
             <li> <a href='/'>Home</a> </li>
             <li> <a href='/'>About</a> </li>
             <li> <a href='/'>Menu</a> </li>
