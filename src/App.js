@@ -10,10 +10,8 @@ import About from './components/About';
 function App() {
   return (
     <>
-      <body>       
-        <header>
-          <Nav/>
-        </header>     
+      <body><header>
+            <Nav/></header>
         <main>
           <article><Hero/></article>
           <article><Highlights/></article>
@@ -22,8 +20,7 @@ function App() {
         </main>
         <footer>
           <Footer/>
-        </footer>   
-      </body>
+        </footer></body>
     </>
   );
 }
